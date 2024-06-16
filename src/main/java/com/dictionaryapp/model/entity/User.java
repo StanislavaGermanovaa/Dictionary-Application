@@ -23,7 +23,12 @@ public class User {
     @OneToMany(mappedBy = "addedBy")
     private Set<Word> addedWords;
 
+    public User(Set<Word> addedWords) {
+        this.addedWords = addedWords;
+    }
+
     public User() {
+
     }
 
     public long getId() {
