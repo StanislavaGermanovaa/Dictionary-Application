@@ -19,7 +19,6 @@ public class Word {
     @Column(nullable = false)
     private String translation;
 
-
     private String example;
 
     @Column(nullable = false)

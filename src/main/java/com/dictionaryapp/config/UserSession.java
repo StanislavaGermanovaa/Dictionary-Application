@@ -17,4 +17,28 @@ public class UserSession {
         this.username=user.getUsername();
     }
 
+    public void logout() {
+        id = 0;
+        username = null;
+    }
+
+    public boolean isLoggedIn(){
+    return id>0;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }

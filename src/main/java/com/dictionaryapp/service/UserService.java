@@ -4,11 +4,13 @@ import com.dictionaryapp.config.UserSession;
 import com.dictionaryapp.model.dto.UserLoginDTO;
 import com.dictionaryapp.model.dto.UserRegisterDTO;
 import com.dictionaryapp.model.entity.User;
+import com.dictionaryapp.model.entity.Word;
 import com.dictionaryapp.repo.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -62,4 +64,5 @@ public class UserService {
 
         return true;
     }
+
 }
